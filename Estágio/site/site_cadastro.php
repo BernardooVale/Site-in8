@@ -21,7 +21,7 @@
 
         ?>
 
-        <div id="parte1">
+        <div id="parte1" style="padding-bottom:9%;">
 
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">

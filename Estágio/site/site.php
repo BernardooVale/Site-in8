@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="in8.css">
 
         <title>IN8</title>
@@ -20,12 +21,6 @@
 
         $novoUsuario = new Usuario(htmlspecialchars($_POST["nome"]), htmlspecialchars($_POST["email"]), htmlspecialchars($_POST["nascimento"]), htmlspecialchars($_POST["telefone"]));
         $UsuarioCadastrado = $novoUsuario->EscreveArquivo($novoUsuario, "usuarios.json");
-
-        if ($UsuarioCadastrado){
-        
-            
-        
-        }
 
         $arquivoJSON = json_decode(file_get_contents("usuarios.json"));
         $num_cadastrados = count($arquivoJSON);
@@ -71,6 +66,27 @@
             <h1 id="texto-principal1">ESTÁGIO</h1>
             <h2 id="texto-principal2">PROVA DE SELEÇÃO</h2>
             </div>
+
+          <?php 
+          
+          if ($UsuarioCadastrado){
+        
+            echo "<div id='alerta' class='alert alert-danger alert-dismissible fade show' role='alert'>";
+            echo "Usuário já cadastrado";
+            echo "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>";
+  
+          } else if(!$UsuarioCadastrado){
+          
+            echo "<div id='alerta' class='alert alert-success alert-dismissible fade show' role='alert'>";
+            echo "Usuário cadastrado";
+            echo "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>";
+  
+          }
+
+          ?>
+
+          <p id="um">.</p>
+
         </div>
 
         <div class="margem" id="cadastro">

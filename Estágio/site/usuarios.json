@@ -16,41 +16,5 @@
         "email": "",
         "nascimento": "",
         "telefone": ""
-    },
-    {
-        "nome": "Bernardo Vale ",
-        "email": "plusbens@hotmail.com",
-        "nascimento": "2005-01-14",
-        "telefone": "(31) 3412-1788"
-    },
-    {
-        "nome": "pcc",
-        "email": "pcc@ufmg.org",
-        "nascimento": "14714-04-14",
-        "telefone": "4111111111111111"
-    },
-    {
-        "nome": "daaaaaaa",
-        "email": "rangel@gamil.comm",
-        "nascimento": "111111-11-11",
-        "telefone": "1111111111111111"
-    },
-    {
-        "nome": "Epico",
-        "email": "epico@gmail.com",
-        "nascimento": "111111-11-11",
-        "telefone": "1111111111111111"
-    },
-    {
-        "nome": "maestro",
-        "email": "maestro@gmail.com",
-        "nascimento": "111111-11-11",
-        "telefone": "1111111111111111"
-    },
-    {
-        "nome": "lau",
-        "email": "lau@sfe.gr",
-        "nascimento": "111111-11-11",
-        "telefone": "1111111111111111"
     }
 ]
